@@ -15,7 +15,7 @@ public class RecDichotomique {
         int tab[] = {1, 2, 3, 4, 5, 6, 7};
         int val = 3;
         int L = tab.length - 1;
-        RechDichometrique( tab , 6);
+        RechDichometrique2( tab , 6);
     }
      static  int[] table = new int[20];
     static void AfficherTable (int [] t){
@@ -45,7 +45,7 @@ public class RecDichotomique {
         table[j] = V;
         }
     }
-    static int RechDichometrique(int[] t , int Elt){
+    static int RechDichometrique2(int[] t , int Elt){
         int n = t.length - 1;
         int bas = 1, haut = n, milieu;
         int Rang = -1;
