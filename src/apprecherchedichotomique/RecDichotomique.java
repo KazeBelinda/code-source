@@ -4,6 +4,7 @@ package apprecherchedichotomique;
 public class RecDichotomique {
 
    
+   
 
     public static void main(String[] args) {
         InitTable();
