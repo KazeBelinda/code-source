@@ -6,18 +6,7 @@ public class RecDichotomique {
    
    
 
-    public static void main(String[] args) {
-        InitTable();
-        System.out.println("Tableau initial");
-        AfficherTable(table);
-        TriInsert();
-        System.out.println("Tableau trie");
-        AfficherTable(table); 
-        int tab[] = {1, 2, 3, 4, 5, 6, 7};
-        int val = 3;
-        int L = tab.length - 1;
-        RechDichometrique2( tab , 6);
-    }
+  
      static  int[] table = new int[20];
     static void AfficherTable (int [] t){
         int n = t.length - 1;
@@ -58,6 +47,18 @@ public class RecDichotomique {
         }
         while((Elt != t[milieu]) & (bas <= haut));
         return Rang;
+    }
+      public static void main(String[] args) {
+        InitTable();
+        System.out.println("Tableau initial");
+        AfficherTable(table);
+        TriInsert();
+        System.out.println("Tableau trie");
+        AfficherTable(table); 
+        int tab[] = {1, 2, 3, 4, 5, 6, 7};
+        int val = 3;
+        int L = tab.length - 1;
+        RechDichometrique2( tab , 6);
     }
     
 }
